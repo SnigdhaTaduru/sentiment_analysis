@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <title>Sentiment Analysis</title>
+        <style>
+            body {
+                background-image: url(background.jpg);
+                color: floralwhite;
+            }
+            .intro
+            {
+              font-size: 130%;  
+            }
+            header .heading
+            {
+                font-family: 'Acme', sans-serif;
+                font-size: 300%;
+            }
+            .vid
+            {
+                font-size: 110%;
+            }
+            .links
+            {
+                color: floralwhite;
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class='heading'><center>Sentiment Analysis</center></h1> 
+        </header>
+        <div>
+            <p class="intro">
+                Sentiment Analysis is the process of identifying and
+categorizing opinions in order to determine whether the
+writer's attitude towards a particular topic, product, etc. is
+                positive, negative, or neutral.</br></br>
+        This project deals with sentiment analysis of data from
+twitter database.
+    </br></br>
+    We use Naive Bayes classification technique to classify
+tweets.</br>
+            </p>
+        </div>
+        <center>
+            <p class="vid">Below is a demo of the code in execution.</p>
+        <video width="656" height="600" controls>
+            <source src="region_2017-11-02-00h08m44s.mp4" type="video/mp4">
+            Your browser does not support this video.
+        </video>
+    </center>
+    <div clas="links">
+        <p>This project makes the use of two datasets one for training and the other for testing.<br>
+        They can be downloaded by clicking on the below links.<br></p>
+        <a target="_blank" href="training.1600000.processed.noemoticon.csv">Training dataset</a>
+        <a target="_blank" href="testdata.manual.2009.06.14.csv">
+            Testing dataset</a>
+    </div>
+    <br><br>
+        <form action="senti.php">
+            <input type="submit" name="" value="Senti World">
+        </form>
+        <form action="naive.php">
+            <input type="submit" name="" value="Naive Bayes">
+        </form>
+    </body>
+</html>
